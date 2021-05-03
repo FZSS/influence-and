@@ -3,8 +3,10 @@ import { combineReducers } from 'redux';
 import { ThunkAction } from 'redux-thunk';
 import reposReducer from 'store/repos/slice';
 import repoDetailsReducer from 'store/repoDetails/slice';
+import onboardingReducer from 'store/onboarding/slice';
 
 const rootReducer = combineReducers({
+  onboarding: onboardingReducer,
   repos: reposReducer,
   repoDetails: repoDetailsReducer,
 });
