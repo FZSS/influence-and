@@ -1,77 +1,77 @@
 .onboarding-stepper {
-    background-color: var(--accent-purple);
-    width: 350px;
-    height: calc(100vh - 60px);
-    padding: 30px;
+  background-color: var(--accent-purple);
+  width: 350px;
+  height: calc(100vh - 60px);
+  padding: 30px;
 }
 
 .onboarding-stepper-branding {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .onboarding-stepper-bottom {
-    position: absolute;
-    bottom: 40px;
-    margin-left: 10px;
+  position: absolute;
+  bottom: 40px;
+  margin-left: 10px;
 }
 
 .onboarding-stepper-bottom div {
-    display: flex;
+  display: flex;
 }
 
 .onboarding-stepper .MuiTypography-body2 {
-    font-size: 18px
+  font-size: 18px
 }
 
 .onboarding-stepper .MuiStepLabel-labelContainer {
-    margin-left: 15px
+  margin-left: 15px
 }
 
 .onboarding-stepper .MuiStepLabel-label.MuiStepLabel-active {
-    color: var(--primary-purple);
+  color: var(--primary-purple);
 }
 
 .onboarding-stepper .MuiStepLabel-label.MuiStepLabel-completed {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .onboarding-stepper .MuiStepLabel-label {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 .onboarding-stepper-bottom div:nth-child(2) {
-    margin-top: 10px
+  margin-top: 10px
 }
 
 @media (max-height: 750px) {
-    .onboarding-stepper-bottom {
-        display: none;
-    }
+  .onboarding-stepper-bottom {
+    display: none;
+  }
 }
 
 .onboarding-stepper-bottom p {
-    margin-left: 15px;
-    color: grey
+  margin-left: 15px;
+  color: grey
 }
 
 
 .onboarding-stepper .MuiStepConnector-root {
-    padding-top: 8px
+  padding-top: 8px
 }
 
 .onboarding-stepper .MuiStepConnector-lineVertical {
-    min-height: 50px;
-    border-left-style: dashed;
+  min-height: 50px;
+  border-left-style: dashed;
 }
 
 .onboarding-stepper .MuiStepIcon-root.MuiStepIcon-completed {
-    color: var(--secondary-blue)
+  color: var(--secondary-blue)
 }
 
 .onboarding-stepper .MuiStepIcon-root.MuiStepIcon-active {
-    color: var(--primary-purple)
+  color: var(--primary-purple)
 }
 
 .onboarding-stepper .MuiPaper-root {
-    background-color: var(--accent-purple);
+  background-color: var(--accent-purple);
 }

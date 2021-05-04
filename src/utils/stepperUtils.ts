@@ -3,14 +3,16 @@ export const getStepLabel = (stepOrdinal: number) => {
     case 0:
       return 'Goal';
     case 1:
-      return 'Budget & Schedule';
+      return 'Industry';
     case 2:
-      return 'Audience';
+      return 'Budget & Schedule';
     case 3:
-      return 'Placement';
+      return 'Audience';
     case 4:
-      return 'Influencer Preference';
+      return 'Placement';
     case 5:
+      return 'Influencer Preference';
+    case 6:
       return 'Content Creation';
     default:
       return '';

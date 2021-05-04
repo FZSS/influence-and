@@ -1,12 +1,29 @@
 import * as React from 'react';
 import 'components/styles.css';
 import OnboardingView from 'components/OnboardingView/OnboardingView';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
+import { primaryPurple, secondaryBlue } from 'utils/styleUtils';
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: primaryPurple,
+      contrastText: '#ffff',
+    },
+    secondary: {
+      main: secondaryBlue,
+      contrastText: '#ffff',
+    },
+  },
+});
 
 const App: React.FunctionComponent = () => {
   return (
-    <div className="app-view">
-      <OnboardingView />
-    </div>
+    <MuiThemeProvider theme={theme}>
+      <div className="app-view">
+        <OnboardingView />
+      </div>
+    </MuiThemeProvider>
   );
 };
 

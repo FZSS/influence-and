@@ -8,7 +8,7 @@ import { updateOnboardingStep } from 'store/onboarding/slice';
 
 const StepperControlButtons: FunctionComponent = () => {
   const step = useSelector((state: RootState) => state.onboarding.step);
-  const isLastStep = step === 5;
+  const isLastStep = step === 6;
   const isFirstStep = step === 0;
   const dispatch = useDispatch();
 

@@ -3,5 +3,5 @@ export interface OnboardingState {
 }
 
 export const initialState: OnboardingState = {
-  step: 0,
+  step: 2,
 };

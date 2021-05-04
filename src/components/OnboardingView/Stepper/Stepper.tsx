@@ -5,12 +5,12 @@ import { RootState } from 'store/store';
 
 import { Stepper, Step, StepLabel, Typography, Icon } from '@material-ui/core';
 import { Forum, Help } from '@material-ui/icons';
-import { getStepLabel, getStepOrdinal } from 'utils/stepperUtils';
+import { getStepLabel } from 'utils/stepperUtils';
 
 import 'components/OnboardingView/Stepper/styles.css';
 import { secondaryBlue } from 'utils/styleUtils';
 
-const steps = [0, 1, 2, 3, 4, 5];
+const steps = [0, 1, 2, 3, 4, 5, 6];
 
 const Branding = (
   <div className="onboarding-stepper-branding">
