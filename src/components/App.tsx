@@ -2,12 +2,13 @@ import * as React from 'react';
 import 'components/styles.css';
 import OnboardingView from 'components/OnboardingView/OnboardingView';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
-import { primaryPurple, secondaryBlue } from 'utils/styleUtils';
+import { accentPurple, primaryPurple, secondaryBlue } from 'utils/styleUtils';
 
 const theme = createMuiTheme({
   palette: {
     primary: {
       main: primaryPurple,
+      light: accentPurple,
       contrastText: '#ffff',
     },
     secondary: {

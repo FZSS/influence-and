@@ -10,6 +10,9 @@ import IndustryPage from 'components/OnboardingView/IndustryPage/IndustryPage';
 import 'components/OnboardingView/styles.css';
 import OnboardingHeading from 'components/OnboardingView/OnboardingHeading';
 import BudgetPage from 'components/OnboardingView/BudgetPage/BudgetPage';
+import AudiencePage from 'components/OnboardingView/AudiencePage/AudiencePage';
+import PlacementPage from 'components/OnboardingView/PlacementPage/PlacementPage';
+import InfluencerPage from 'components/OnboardingView/InfluencerPage/InfluencerPage';
 
 const OnboardingView: FunctionComponent = () => {
   const step = useSelector((state: RootState) => state.onboarding.step);
@@ -25,6 +28,15 @@ const OnboardingView: FunctionComponent = () => {
       break;
     case 2:
       pageContent = <BudgetPage />;
+      break;
+    case 3:
+      pageContent = <AudiencePage />;
+      break;
+    case 4:
+      pageContent = <PlacementPage />;
+      break;
+    case 5:
+      pageContent = <InfluencerPage />;
       break;
   }
 

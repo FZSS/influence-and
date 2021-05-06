@@ -11,7 +11,7 @@ export const getStepLabel = (stepOrdinal: number) => {
     case 4:
       return 'Placement';
     case 5:
-      return 'Influencer Preference';
+      return 'Influencers';
     case 6:
       return 'Content Creation';
     default:

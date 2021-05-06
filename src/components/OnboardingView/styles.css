@@ -4,7 +4,8 @@
 
 .onboarding-content {
   padding: 40px;
-  width: calc(100vw - 350px)
+  width: calc(100vw - 350px);
+  height: calc(100vh - 80px);
 }
 
 .onboarding-header {

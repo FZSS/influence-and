@@ -1,0 +1,79 @@
+.onboarding-influencers {
+  height: calc(100% - 10px);
+}
+
+.onboarding-influencers-progress-bar {
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 25%;
+}
+
+.onboarding-influencers-progress-text {
+  padding-top: 20px;
+}
+
+.onboarding-influencers-recommendations {
+  margin-top: 30px;
+}
+
+.influencer-row {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.influencer-row-header {
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.influencer-row-cell {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+
+.influencer-row-count {
+  min-width: 10px;
+}
+
+.influencer-row-profile {
+  min-width: 50px;
+}
+
+.influencer-row-name {
+  min-width: 100px;
+  overflow-wrap: break-word;
+}
+
+.influencer-row-user-name {
+  min-width: 100px;
+  overflow-wrap: break-word;
+}
+
+.influencer-row-followers {
+  min-width: 70px;
+  overflow-wrap: break-word;
+}
+
+.influencer-row-engagements {
+  min-width: 90px;
+  overflow-wrap: break-word;
+}
+
+.influencer-row-industries {
+  min-width: 80px;
+}
+
+.influencer-row-category-cell {
+  margin-right: 10px !important;
+  background-color: #f7d1d1;
+  padding: 3px 12px;
+  border-radius: 15px;
+  color: grey;
+}
+
+.influencer-row-actions {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}

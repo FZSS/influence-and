@@ -1,0 +1,27 @@
+.audience-preferences {
+  margin-top: 30px;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.audience-preference {
+  width: 200px;
+  padding: 15px;
+}
+
+.audience-select {
+  min-width: 200px !important;
+  height: 55px;
+}
+
+.audience-select-label{
+  display: flex;
+  margin-bottom: 10px;
+  color: grey;
+  align-items: center;
+}
+
+.audience-select-label-icon {
+  margin-right: 5px;
+}

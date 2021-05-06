@@ -10,14 +10,13 @@ import { getStepLabel } from 'utils/stepperUtils';
 import 'components/OnboardingView/Stepper/styles.css';
 import { secondaryBlue } from 'utils/styleUtils';
 
-const steps = [0, 1, 2, 3, 4, 5, 6];
+export const steps = [0, 1, 2, 3, 4, 5];
 
 const Branding = (
   <div className="onboarding-stepper-branding">
-    <Typography variant="h4"> Influence </Typography>
-    <Typography variant="h4" style={{ color: secondaryBlue }}>
-      {' '}
-      &{' '}
+    <Typography variant="h5">Influence</Typography>
+    <Typography variant="h5" style={{ color: secondaryBlue }}>
+      &
     </Typography>
   </div>
 );
@@ -28,13 +27,13 @@ const StepperBottom = (
       <Icon color="disabled">
         <Forum />
       </Icon>
-      <Typography variant="body1"> Pricing </Typography>
+      <Typography variant="body1">Pricing</Typography>
     </div>
     <div>
       <Icon color="disabled">
         <Help />
       </Icon>
-      <Typography variant="body1"> Help </Typography>
+      <Typography variant="body1">Help</Typography>
     </div>
   </div>
 );

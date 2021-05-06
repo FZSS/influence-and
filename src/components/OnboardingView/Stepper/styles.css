@@ -1,6 +1,6 @@
 .onboarding-stepper {
   background-color: var(--accent-purple);
-  width: 350px;
+  width: 290px;
   height: calc(100vh - 60px);
   padding: 30px;
 }
@@ -17,10 +17,6 @@
 
 .onboarding-stepper-bottom div {
   display: flex;
-}
-
-.onboarding-stepper .MuiTypography-body2 {
-  font-size: 18px
 }
 
 .onboarding-stepper .MuiStepLabel-labelContainer {
@@ -43,7 +39,7 @@
   margin-top: 10px
 }
 
-@media (max-height: 750px) {
+@media (max-height: 550px) {
   .onboarding-stepper-bottom {
     display: none;
   }
@@ -55,12 +51,16 @@
 }
 
 
+.onboarding-stepper .MuiStepper-root {
+  padding: 4px;
+}
+
 .onboarding-stepper .MuiStepConnector-root {
-  padding-top: 8px
+  padding-top: 5px
 }
 
 .onboarding-stepper .MuiStepConnector-lineVertical {
-  min-height: 50px;
+  min-height: 30px;
   border-left-style: dashed;
 }
 
