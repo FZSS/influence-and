@@ -21,7 +21,7 @@ const InfluencerRow: FunctionComponent<InfluencerRowProps> = (props) => {
         <Typography variant="body1">{props.id}</Typography>
       </div>
       <div className="influencer-row-cell influencer-row-profile">
-        <Avatar>{props.id}</Avatar>
+        <Avatar>{props.avatarUrl}</Avatar>
       </div>
       <div className="influencer-row-cell influencer-row-name">
         <Typography variant="body1">{props.name}</Typography>
@@ -35,12 +35,14 @@ const InfluencerRow: FunctionComponent<InfluencerRowProps> = (props) => {
       <div className="influencer-row-cell influencer-row-engagements">
         <Typography variant="body1">{props.engagements}</Typography>
       </div>
-      <Typography variant="body1" className="influencer-row-category-cell">
-        {props.category1}
-      </Typography>
-      <Typography variant="body1" className="influencer-row-category-cell">
-        {props.category2}
-      </Typography>
+      <div className="influencer-row-category-container">
+        <Typography variant="body1" className="influencer-row-category-cell">
+          {props.category1}
+        </Typography>
+        <Typography variant="body1" className="influencer-row-category-cell">
+          {props.category2}
+        </Typography>
+      </div>
       <div className="influencer-row-actions">
         <Icon color="primary" className="influencer-row-cell">
           <Link />

@@ -45,6 +45,10 @@
   }
 }
 
+.onboarding-stepper .MuiStepLabel-label {
+  font-size: 16px;
+}
+
 .onboarding-stepper-bottom p {
   margin-left: 15px;
   color: grey

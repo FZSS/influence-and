@@ -14,8 +14,8 @@ export const steps = [0, 1, 2, 3, 4, 5];
 
 const Branding = (
   <div className="onboarding-stepper-branding">
-    <Typography variant="h5">Influence</Typography>
-    <Typography variant="h5" style={{ color: secondaryBlue }}>
+    <Typography variant="h4">Influence</Typography>
+    <Typography variant="h4" style={{ color: secondaryBlue }}>
       &
     </Typography>
   </div>

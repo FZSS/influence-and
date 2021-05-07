@@ -19,25 +19,25 @@ const GoalPage: FunctionComponent = () => {
         <List className="onboarding-list-items">
           <ListItem>
             <Checkbox color="primary" />
-            <Typography variant="body1">Improve conversions</Typography>
+            <Typography variant="body1">Brand Awareness</Typography>
+          </ListItem>
+          <ListItem>
+            <Checkbox color="primary" />
+            <Typography variant="body1">Traffic</Typography>
+          </ListItem>
+          <ListItem>
+            <Checkbox color="primary" />
+            <Typography variant="body1">Sales and Lead Generation</Typography>
           </ListItem>
           <ListItem>
             <Checkbox color="primary" />
             <Typography variant="body1">
-              Gain customer insight and data
+              Social Media Followers and Engagement
             </Typography>
           </ListItem>
           <ListItem>
             <Checkbox color="primary" />
-            <Typography variant="body1">
-              Build brand awareness and strength
-            </Typography>
-          </ListItem>
-          <ListItem>
-            <Checkbox color="primary" />
-            <Typography variant="body1">
-              Increase engagement and interactions
-            </Typography>
+            <Typography variant="body1">Reputation</Typography>
           </ListItem>
         </List>
       </div>

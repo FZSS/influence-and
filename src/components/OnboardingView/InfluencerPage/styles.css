@@ -41,12 +41,13 @@
 }
 
 .influencer-row-name {
-  min-width: 100px;
+  min-width: 180px;
   overflow-wrap: break-word;
 }
 
 .influencer-row-user-name {
-  min-width: 100px;
+  width: 150px;
+  min-width: 150px;
   overflow-wrap: break-word;
 }
 
@@ -61,7 +62,14 @@
 }
 
 .influencer-row-industries {
-  min-width: 80px;
+  min-width: 180px;
+  width: 180px;
+}
+
+.influencer-row-category-container {
+  width: 240px;
+  display: flex;
+  min-width: 240px;
 }
 
 .influencer-row-category-cell {

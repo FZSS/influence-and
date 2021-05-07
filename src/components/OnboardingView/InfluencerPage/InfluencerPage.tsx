@@ -1,75 +1,95 @@
 import { FunctionComponent, useEffect, useState } from 'react';
 import * as React from 'react';
-import {
-  List,
-  ListItem,
-  Typography,
-  Checkbox,
-  LinearProgress,
-  Avatar,
-  Icon,
-  Button,
-} from '@material-ui/core';
+import { Typography, LinearProgress } from '@material-ui/core';
 
 import 'components/OnboardingView/InfluencerPage/styles.css';
 import { InfluencerRowProps } from 'components/OnboardingView/InfluencerPage/InfluencerRow';
 import InfluencerRow from 'components/OnboardingView/InfluencerPage/InfluencerRow';
-import { Forum, Link } from '@material-ui/icons';
 
 const influencers: InfluencerRowProps[] = [
   {
     id: 1,
-    name: 'Justin Bieber',
-    userName: '@justinbieber',
-    avatarUrl: '123',
-    followers: '10M',
-    engagements: '100M',
-    category1: 'Fashion',
-    category2: 'Music',
+    name: 'Jackie Gebel',
+    userName: '@noleftovers',
+    avatarUrl: 'JG',
+    followers: '45k',
+    engagements: '0.3%',
+    category1: 'Food',
+    category2: 'Restaurants',
   },
   {
-    id: 1,
-    name: 'Justin Bieber',
-    userName: '@justinbieber',
-    avatarUrl: '123',
-    followers: '10M',
-    engagements: '100M',
-    category1: 'Fashion',
-    category2: 'Music',
+    id: 2,
+    name: 'Lina',
+    userName: '@thesweetlifeoflina',
+    avatarUrl: 'L',
+    followers: '45K',
+    engagements: '1.3%',
+    category1: 'Travel',
+    category2: 'Restaurants',
   },
   {
-    id: 1,
-    name: 'Justin Bieber',
-    userName: '@justinbieber',
-    avatarUrl: '123',
-    followers: '10M',
-    engagements: '100M',
-    category1: 'Fashion',
-    category2: 'Music',
+    id: 3,
+    name: 'Alexa Mathews',
+    userName: '@eatingnyc',
+    avatarUrl: 'AM',
+    followers: '310K',
+    engagements: '0.5%',
+    category1: 'NYC',
+    category2: 'Food',
   },
   {
-    id: 1,
-    name: 'Justin Bieber',
-    userName: '@justinbieber',
-    avatarUrl: '123',
-    followers: '10M',
-    engagements: '100M',
-    category1: 'Fashion',
-    category2: 'Music',
+    id: 4,
+    name: 'Tina Liu-Rann',
+    userName: '@tinaeats_',
+    avatarUrl: 'TL',
+    followers: '28K',
+    engagements: '0.8%',
+    category1: 'Lifestyle',
+    category2: 'Food',
   },
   {
-    id: 1,
-    name: 'Justin Bieber',
-    userName: '@justinbieber',
-    avatarUrl: '123',
-    followers: '10M',
-    engagements: '100M',
+    id: 5,
+    name: 'Katina',
+    userName: '@katinaeatskilos',
+    avatarUrl: 'K',
+    followers: '42K',
+    engagements: '4.1%',
     category1: 'Fashion',
-    category2: 'Music',
+    category2: 'Food',
+  },
+  {
+    id: 6,
+    name: 'Colu Henry',
+    userName: '@katinaeatskilos',
+    avatarUrl: 'CH',
+    followers: '3K',
+    engagements: '1.3%',
+    category1: 'Cooking',
+    category2: 'Food',
+  },
+  {
+    id: 7,
+    name: 'Christine T. Ferguson',
+    userName: '@tourdelust',
+    avatarUrl: 'CTF',
+    followers: '380K',
+    engagements: '1.4%',
+    category1: 'Liefstyle',
+    category2: 'Food',
+  },
+  {
+    id: 8,
+    name: 'Stephanie',
+    userName: '@adventuresofchephanie',
+    avatarUrl: 'S',
+    followers: '14K',
+    engagements: '2.4%',
+    category1: 'Travel',
+    category2: 'Food',
   },
 ];
 
-const LOADING_TIME = 3000;
+const LOADING_TIME = 2000;
 
 const loader = (
   <div className="onboarding-influencers">
@@ -104,7 +124,7 @@ const headerRow = (
       <Typography variant="body2">Followers</Typography>
     </div>
     <div className="influencer-row-cell influencer-row-engagements">
-      <Typography variant="body2">Engagements</Typography>
+      <Typography variant="body2">Engagement</Typography>
     </div>
     <Typography variant="body2" className="influencer-row-cell">
       Industries

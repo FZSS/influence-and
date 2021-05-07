@@ -50,7 +50,7 @@ const StepperControlButtons: FunctionComponent = () => {
       color="primary"
       onClick={handleNextClick}
     >
-      Find Influencers
+      Find
     </Button>
   );
 
