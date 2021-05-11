@@ -1,19 +1,6 @@
 import { FunctionComponent } from 'react';
 import * as React from 'react';
-import {
-  List,
-  ListItem,
-  Typography,
-  Checkbox,
-  Slider,
-  withStyles,
-  Input,
-  InputAdornment,
-  OutlinedInput,
-  FormControl,
-  InputLabel,
-  TextField,
-} from '@material-ui/core';
+import { Typography, InputAdornment, TextField } from '@material-ui/core';
 
 import {
   MuiPickersUtilsProvider,
@@ -71,13 +58,13 @@ const BudgetPage: FunctionComponent = () => {
 
           <Typography
             variant="body1"
-            style={{ marginTop: 50, marginBottom: 20 }}
+            style={{ marginTop: 30, marginBottom: 20 }}
           >
             Please set the schedule of your campaign
           </Typography>
 
           <TextField
-            style={{ maxWidth: 150 }}
+            style={{ maxWidth: 150, marginLeft: 15 }}
             label="Duration"
             InputProps={{
               endAdornment: (
@@ -87,15 +74,15 @@ const BudgetPage: FunctionComponent = () => {
             variant="outlined"
           />
         </div>
-        <Typography variant="body1" style={{ marginTop: 50, marginBottom: 20 }}>
+        <Typography variant="body1" style={{ marginTop: 30, marginBottom: 20 }}>
           Please set start date of your campaign
         </Typography>
 
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
           <KeyboardDatePicker
             margin="normal"
-            id="date-picker-dialog"
             format="MM/dd/yyyy"
+            style={{ paddingLeft: 15 }}
             value={selectedDate}
             onChange={handleDateChange}
             KeyboardButtonProps={{

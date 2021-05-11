@@ -8,11 +8,18 @@ const PlacementPage: FunctionComponent = () => {
       <div>
         <Typography variant="h5">Placement</Typography>
         <Typography variant="body2" style={{ color: 'grey' }}>
-          Pick the target platforms of your campaign
+          Choose the target platforms of your campaign
         </Typography>
       </div>
       <div className="onboarding-list">
+        <Typography variant="body1">
+          Please select the platforms (select multiple if apply).
+        </Typography>
         <List className="onboarding-list-items">
+          <ListItem>
+            <Checkbox color="primary" />
+            <Typography variant="body1">Twitter</Typography>
+          </ListItem>
           <ListItem>
             <Checkbox color="primary" />
             <Typography variant="body1">Facebook</Typography>

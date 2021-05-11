@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react';
 import * as React from 'react';
 import { List, ListItem, Typography, Checkbox } from '@material-ui/core';
+import { RadioButtonUnchecked, RadioButtonChecked } from '@material-ui/icons';
 
 const GoalPage: FunctionComponent = () => {
   return (
@@ -18,25 +19,45 @@ const GoalPage: FunctionComponent = () => {
         </Typography>
         <List className="onboarding-list-items">
           <ListItem>
-            <Checkbox color="primary" />
+            <Checkbox
+              color="primary"
+              icon={<RadioButtonUnchecked />}
+              checkedIcon={<RadioButtonChecked />}
+            />
             <Typography variant="body1">Brand Awareness</Typography>
           </ListItem>
           <ListItem>
-            <Checkbox color="primary" />
+            <Checkbox
+              color="primary"
+              icon={<RadioButtonUnchecked />}
+              checkedIcon={<RadioButtonChecked />}
+            />
             <Typography variant="body1">Traffic</Typography>
           </ListItem>
           <ListItem>
-            <Checkbox color="primary" />
+            <Checkbox
+              color="primary"
+              icon={<RadioButtonUnchecked />}
+              checkedIcon={<RadioButtonChecked />}
+            />
             <Typography variant="body1">Sales and Lead Generation</Typography>
           </ListItem>
           <ListItem>
-            <Checkbox color="primary" />
+            <Checkbox
+              color="primary"
+              icon={<RadioButtonUnchecked />}
+              checkedIcon={<RadioButtonChecked />}
+            />
             <Typography variant="body1">
               Social Media Followers and Engagement
             </Typography>
           </ListItem>
           <ListItem>
-            <Checkbox color="primary" />
+            <Checkbox
+              color="primary"
+              icon={<RadioButtonUnchecked />}
+              checkedIcon={<RadioButtonChecked />}
+            />
             <Typography variant="body1">Reputation</Typography>
           </ListItem>
         </List>

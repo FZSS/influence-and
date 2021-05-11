@@ -20,6 +20,12 @@ body {
   color: var(--secondary-blue) !important;
 }
 
-.MuiFormLabel-root.Mui-focused	{
+.MuiFormLabel-root.Mui-focused {
   color: var(--secondary-blue) !important;
+}
+
+.app-view {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--accent-purple);
 }
